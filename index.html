@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/superhero/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main></main>
+  <script src="conf.js"></script>
+  <script src="main.min.js"></script>
+  <script>
+    var app = Elm.Main.embed(document.querySelector('main'), {
+      anime: {
+        spreadsheet1: ENV_SPREADSHEET_1 || '',
+        spreadsheet2: ENV_SPREADSHEET_2 || '',
+      }
+    })
+    // you can use ports and stuff here
+  </script>
+</body>
+</html>

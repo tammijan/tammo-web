@@ -1,0 +1,2 @@
+var ENV_SPREADSHEET_1 = '';
+var ENV_SPREADSHEET_2 = '';

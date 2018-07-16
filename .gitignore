@@ -1,0 +1,10 @@
+node_modules/
+elm-stuff/
+tools/
+
+# dist
+main.min.js
+main.js
+
+# config
+conf.js

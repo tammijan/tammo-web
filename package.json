@@ -1,0 +1,18 @@
+{
+  "name": "tammo-web",
+  "version": "1.0.0",
+  "description": "Tammo Website",
+  "scripts": {
+    "postinstall": "elm-package install -y",
+    "build:dev": "elm-make src/Main.elm --warn --output=main.dev.js",
+    "build": "elm-make src/Main.elm --warn --output=main.js && uglifyjs main.js > main.min.js && rm main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "elm-format --yes src/"
+  },
+  "author": "",
+  "license": "BSD3",
+  "dependencies": {
+    "elm": "0.18.0",
+    "uglify-js": "^3.4.4"
+  }
+}
